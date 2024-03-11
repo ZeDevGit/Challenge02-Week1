@@ -1,0 +1,91 @@
+* {
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--tronblue);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+h1 {
+    /* 4rem = 40px (4 * 10px) */
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+header{
+
+}
+
+nav {
+
+}
+
+nav ul {
+
+}
+
+nav ul li {
+
+}
+
+header section {
+    
+}
+
+header section h1 {
+
+}
+
+.main-pargraph {
+
+}
+
+.main-banner {
+
+}
+
+.main-halves {
+    
+}
+
+.main-title-card {
+
+}
+
+.aside-section {
+
+}
+
+.above-footer {
+
+}
+
+footer {
+
+}
