@@ -1,5 +1,6 @@
 * {
-
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+        Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 h1,
@@ -38,54 +39,219 @@ h6 {
     font-size: 1.5rem;
 }
 
+/* Header section needs to be divided into having the main title into the left side and */
+/* navigation elements onto the right side. */
+
 header{
-
-}
-
-nav {
-
-}
-
-nav ul {
-
-}
-
-nav ul li {
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    justify-content: space-between;
+    background-color: #31343d;
+    height: 170px;
 }
 
 header section {
-    
+    display:flex;
+    justify-content: space-between;
+    color:#31343d;
+    width: 100%;
 }
 
 header section h1 {
-
+    background-color: #92cccd;
+    height: 90px;
+    width: 450px;
 }
 
-.main-pargraph {
-
+nav {
+    display:flex;
 }
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    font-size: 40px;
+}
+
+/* I used a background-image attribute to spread an image across the whole element and repeated */
+/* this for each of the smaller pieces throughout. */
+
+.under-header {
+    display: flex;
+    height: 300px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image:url('../images/EngineRoom.png');
+}
+
+.under-header h1 {
+    justify-content: flex-end;
+    background-color: #92cccd;
+    width:380px;
+    margin-bottom: 30px;
+    margin-right: 90px;
+}
+
+main {
+    background-color: #ededf6;
+    width: 75%;
+    height: 900px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* I realized just using the <main> and <aside> tags wouldn't be enough for formatting so I */
+/* wrapped both of them into a div element called "middle-page-elements" */
+
+.middle-page-elements {
+    background-color: #ededf6;
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+/* Since the example page had a section for two paragraphs I created this section to house them. */
+
+.main-paragraph {
+    outline: 8px solid #92cccd;
+    float: left;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    display: inline;
+}
+
+/* Since one of the 5 elements underneath the paragraphs took up a whole row I named it as "main-banner" */
 
 .main-banner {
-
+    outline: 8px solid #92cccd;
+    background-image:url('../images/EngineRoom.png');
+    float: left;
+    width: 100%;
+    height: 300px;
 }
+
+/* To make organizing a little easier for the smaller pieces I named them "main-halves" and styled them all together */
 
 .main-halves {
-    
+    display: flex;
+    outline: 8px solid #92cccd;
+    background-image:url('../images/EngineRoom.png');
+    width: 49%;
+    flex-direction: row;
+    margin: 0;
+    padding: 30px;
 }
+
+/* All five elements in this the <main> section use title the same way so I consolidated them into one simple class */
 
 .main-title-card {
-
+    background-color: #92cccd;
+    float: left;
+    background-color: #92cccd;
 }
+
+
+/* I felt like an aside would be the best fit for the titles besides the <main> section */
+
+aside {
+    float: left;
+    display:flex;
+    flex-direction: column;
+    width: 25%;
+    height: 900px;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+/* It had to be divided up into two separate boxes to make them appear correctly with the colored border */
+/* coming from the <h1> element box */
 
 .aside-section {
-
+    width: 100%;
+    height: 200px;
+    float: left;
+    margin-bottom: 25px;
+    padding-right: 20px;
+    border-right: 6px solid #31343d;
 }
 
-.above-footer {
+.aside-section h1 {
+    text-align: right;
+}
 
+.aside-section-2 {
+    width: 100%;
+    height: 600px;
+    float: left;
+    margin-bottom: 25px;
+    padding-right: 20px;
+    border-right: 6px solid #31343d;
+}
+
+.aside-section-2 h1 {
+    text-align: right;
+}
+
+/* There was one more small section above the footer so I added the "above-footer" class to make things simpler */
+
+.above-footer {
+    display:flex;
+    justify-content: space-between;
+    height: 180px;
+    width: 100%;
+}
+
+.above-footer section {
+    width: 24.5%;
+    float: left;
+    margin-bottom: 25px;
+    padding-right: 20px;
+    border-right: 6px solid #31343d;
+}
+
+.above-footer section h1 {
+    text-align: right;
+}
+
+/* Similary to the top section it made sense to use a <nav> tag and a <ul> to organize the links */
+
+.above-footer section nav {
+    display:flex;
+}
+
+.above-footer section nav ul {
+    text-align: right;
+}
+
+.above-footer section nav ul li {
+    display: inline;
+    list-style-type: none;
+    font-size: 40px;
 }
 
 footer {
-
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    justify-content: center; 
 }
